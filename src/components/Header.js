@@ -5,7 +5,7 @@ import '../styles/Header.css';
 const Header = () => (
   <div className='header-main'>
     <p className='header-text'>
-      yuhhhh!!!!
+      Randy Tsao
     </p>
   </div>
 );
