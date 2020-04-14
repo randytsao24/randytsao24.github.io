@@ -32,12 +32,12 @@ const Personal = () => {
             I'm a software engineer based in Brooklyn and I want to help make things with other people.
           </Paper>
         </Grid>
-        <Grid item xs={6}>
+        <Grid item xs={12} sm={6}>
           <Paper className={infoCard} variant="outlined">
             This is a placeholder for apps I'm gonna showcase.
           </Paper>
         </Grid>
-        <Grid item xs={6}>
+        <Grid item xs={12} sm={6}>
           <Paper className={infoCard} variant="outlined">
             So is this!
           </Paper>
