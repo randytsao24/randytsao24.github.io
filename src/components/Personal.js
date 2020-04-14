@@ -14,7 +14,7 @@ const initStyles = makeStyles(theme => ({
   },
   infoCard: {
     padding: theme.spacing(2),
-    fontSize: 14,
+    fontSize: 15,
     textAlign: 'center',
     color: theme.palette.text.primary
   }
@@ -29,7 +29,7 @@ const Personal = () => {
       <Grid className={infoGridContainer} container spacing={3}>
         <Grid item xs={12}>
           <Paper className={infoCard} variant="outlined">
-            I'm a software engineer based in Brooklyn from Southern California and I want to help make things with other people.
+            I'm a software engineer raised in Southern California and based in Brooklyn, and I want to help make cool things with other people.
           </Paper>
         </Grid>
         <Grid item xs={12}>
