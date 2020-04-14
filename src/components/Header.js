@@ -26,7 +26,6 @@ const Header = () => {
       <Typography className={headerText} variant="h6">
         Randy Tsao
       </Typography>
-      <Button color="inverted">YOOOO!</Button>
     </Toolbar>
   );
 }
