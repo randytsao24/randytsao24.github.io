@@ -1,14 +1,25 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 
-import './styles/App.css';
-import Board from './components/Board';
-import Header from './components/Header';
+import { makeStyles } from '@material-ui/core/styles';
+import { Container } from '@material-ui/core';
 
-const App = () => (
-  <div className="app-main">
-    <Header />
-    <Board />
-  </div>
-);
+import Homepage from './components/Homepage';
+
+const initStyles = makeStyles(theme => ({
+  appContainer: {
+    border: '1px solid black'
+  }
+}));
+
+const App = () => {
+  const classes = initStyles();
+  const { appContainer } = classes;
+
+  return (
+    <Container className={appContainer} maxWidth="md">
+      <Homepage />
+    </Container>
+  );
+}
 
 export default App;

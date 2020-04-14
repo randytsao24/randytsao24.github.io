@@ -1,13 +1,34 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 
-import '../styles/Header.css';
+import { makeStyles } from '@material-ui/core/styles';
+import AppBar from '@material-ui/core/AppBar';
+import Button from '@material-ui/core/Button';
+import Toolbar from '@material-ui/core/Toolbar';
+import Typography from '@material-ui/core/Typography';
 
-const Header = () => (
-  <div className='header-main'>
-    <p className='header-text'>
-      Randy Tsao
-    </p>
-  </div>
-);
+const initStyles = makeStyles(theme => ({
+  headerBar: {
+    backgroundColor: '#b3e4df',
+    borderBottom: '1px solid black',
+    width: '100%'
+  },
+  headerText: {
+    textDecoration: 'underline'
+  }
+}));
+
+const Header = () => {
+  const classes = initStyles();
+  const { headerBar, headerText } = classes;
+
+  return (
+    <Toolbar className={headerBar}>
+      <Typography className={headerText} variant="h6">
+        Randy Tsao
+      </Typography>
+      <Button color="inverted">YOOOO!</Button>
+    </Toolbar>
+  );
+}
 
 export default Header;
