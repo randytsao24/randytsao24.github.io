@@ -14,7 +14,7 @@ const initStyles = makeStyles(theme => ({
   },
   infoCard: {
     padding: theme.spacing(2),
-    fontSize: 15,
+    fontSize: 14,
     textAlign: 'center',
     color: theme.palette.text.primary
   }
